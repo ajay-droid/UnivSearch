@@ -1,0 +1,15 @@
+<%- include ("partials/header.ejs") %>
+    <h1 class="listof">List Of Universities in <%= val %></h1>
+
+<div>
+    <ul>
+        <% child.forEach((obj) => { %>
+            <li><a href="<%= obj.web_pages[0] %>" class = univ> <h3><%= obj.name %></h3></a></li>
+            
+         <%})%>
+    </ul>
+
+</div>
+
+
+<%- include ("partials/footer.ejs") %>

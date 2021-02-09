@@ -1,0 +1,22 @@
+<%- include ("partials/header.ejs") %>
+
+    <div class="containerl1">
+        <img src="img/search.png" alt="" class="search-img" />
+        <h1>University Search</h1>
+        <p>Enter a country to get the list of Universities</p>
+        <datalist id="country">
+         
+            <option>India</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>England</option>
+         
+        </datalist>
+        <form action="/univlist" method="GET">
+            <input autocomplete ="off" class="country" type="search" placeholder="Country Name" name="sub" list="country">
+            <button class="btn">Search</button>
+        </form>
+        
+    </div>
+
+    <%- include ("partials/footer.ejs") %>
