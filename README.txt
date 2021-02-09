@@ -13,7 +13,7 @@ University Search Website
    In your local terminal 
      - git clone https://github.com/ajay-droid/UnivSearch.git
      - npm install
-     - node app,js
+     - node app.js
    In your browser 
      - localhost:3000
      
